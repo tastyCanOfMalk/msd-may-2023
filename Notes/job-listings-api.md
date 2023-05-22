@@ -12,3 +12,18 @@ A job listing is for an active (non-retired) Job from the Jobs API.
 3. Job listings can be *closed* by this API.
     - Job Listing is filled
     - Job is unlisted as a result of the Job being retired.
+
+```http
+POST http://localhost:1338/job-listings-rpc/developer-1/openings
+Content-Type: application/json
+
+{
+
+    "openingStartDate": "SOME DATE",
+    "salaryRange": {
+        "min": 50000,
+        "max": 85000
+    }
+}
+
+```

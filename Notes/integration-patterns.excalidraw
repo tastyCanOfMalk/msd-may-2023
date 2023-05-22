@@ -1,0 +1,47 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "QTdi7SKUGWAnyWlEIXtoZ",
+      "type": "text",
+      "x": 542,
+      "y": 158,
+      "width": 886.6192626953125,
+      "height": 325,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 1588407318,
+      "version": 384,
+      "versionNonce": 2129013078,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1684781142123,
+      "link": null,
+      "locked": false,
+      "text": "Service Integration Patterns\n    - There are 100s of these, but they really can be put in to about three categories.\n\n1. Shared Database\n    a- this is never appropriate in a MSA.\n2. Remote Procedure Calls (RPCS)\n    - Service A -> Service B\n    - Performance is now a mystery.\n3. Messaging\n\nOr, just don't integrate. Crate a monolith - one service that does it all.\n\n",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 318,
+      "containerId": null,
+      "originalText": "Service Integration Patterns\n    - There are 100s of these, but they really can be put in to about three categories.\n\n1. Shared Database\n    a- this is never appropriate in a MSA.\n2. Remote Procedure Calls (RPCS)\n    - Service A -> Service B\n    - Performance is now a mystery.\n3. Messaging\n\nOr, just don't integrate. Crate a monolith - one service that does it all.\n\n",
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
