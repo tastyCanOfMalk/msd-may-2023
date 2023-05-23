@@ -10,6 +10,14 @@ public record JobListingCreateModel
     public SalaryRangeModel SalaryRange { get; set; } = new();
 
 }
+
+public record JobListingEntity : JobListingCreateModel
+{
+    public Guid Id { get; set; } = Guid.NewGuid();
+    public string JobId { get; set; } = "";
+    public string JobName { get; set; } = "";
+
+}
 public record SalaryRangeModel : IValidatableObject
 {
     [Required]

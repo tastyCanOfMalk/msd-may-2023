@@ -29,6 +29,7 @@ public class JobsController : ControllerBase
         return Ok(response);
     }
 
+
     [HttpGet("{slug}")]
     public async Task<ActionResult> GetJobFromSlug(string slug)
     {
@@ -44,12 +45,14 @@ public class JobsController : ControllerBase
         }
     }
     
+     
     [HttpHead("{slug}")]
     public async Task<ActionResult> CheckForJobBySlugAsync(string slug)
     {
-        JobItemModel? response = await _jobManager.GetJobBySlugAsync(slug);
+       // HttpContext.Request.Method
+        bool exists = await _jobManager.CheckForJobAsync(slug);
 
-        if (response is null)
+        if (!exists)
         {
             return NotFound();
         }

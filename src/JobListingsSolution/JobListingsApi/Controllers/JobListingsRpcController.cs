@@ -27,7 +27,7 @@ public class JobListingsRpcController : ControllerBase
             return Ok("That Job Exists");
         } else
         {
-            return NotFound("No Job with that title exists");
+            return NotFound("No Job with that title exists yet");
         }
     }
   
