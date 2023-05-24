@@ -11,3 +11,5 @@ services:
       - port: 1338
   - name: mvc
     project: ./src/web/JobApplicationMvc/JobApplicationMvc/JobApplicationMvc.csproj
+  - name: hr-acl
+    project: ./src/hr/AclSolution/Acl/Acl.csproj

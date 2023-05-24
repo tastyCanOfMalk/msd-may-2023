@@ -1,0 +1,5 @@
+﻿@JobsApi_HostAddress = http://localhost:1337
+
+GET {{JobsApi_HostAddress}}/jobs
+
+###
