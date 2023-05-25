@@ -69,5 +69,16 @@ public class DataSubscribers : ICapSubscribe
         
 
     }
+
+    // [CapSubscribe("HrAcl.HiringRequestCreated")]
+    // public async Task CloseJobOfferingWhenEmployeeCreated(AclEvents.EmployeeHired employee, [FromCap] CapHeader header)
+    // {
+        
+    //     var offeringId = header["offering-id"];
+    //     await _publisher.PublishAsync("JobListings.CloseOffering", new
+    //     {
+    //         OfferingId = offeringId 
+    //     });
+    // }
 }
 
